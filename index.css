@@ -15,16 +15,21 @@ body {
 .header__content {
   display: flex;
   justify-content: center;
-  min-width: 360px;
+  min-width: 359px;
   max-width: 510px;
   padding: 12px 0px;
+}
+@media (max-width: 360px) {
+  .header__content {
+    max-width: 359px;
+  }
 }
 
 .header__search-form {
   display: flex;
+  width: 100%;
 }
 .header__search-form__input {
-  width: 375px;
   height: 44px;
   margin-right: 14px;
   flex-grow: 1;
@@ -33,7 +38,6 @@ body {
   border-radius: 4px;
 }
 .header__search-form__button {
-  width: 121px;
   height: 44px;
 
   border: 1px solid #000000;
@@ -41,9 +45,16 @@ body {
 }
 .content {
   margin: 0 auto;
+  min-width: 359px;
   max-width: 510px;
 }
+@media (max-width: 360px) {
+  .content {
+    max-width: 359px;
+  }
+}
 .content__p {
+  margin: 12px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
