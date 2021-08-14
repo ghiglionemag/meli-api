@@ -21,6 +21,7 @@ body {
 }
 @media (max-width: 360px) {
   .header__content {
+    min-width: 300px;
     max-width: 359px;
   }
 }
@@ -50,6 +51,7 @@ body {
 }
 @media (max-width: 360px) {
   .content {
+    min-width: 300px;
     max-width: 359px;
     margin: 12px 12px;
   }
@@ -89,6 +91,11 @@ body {
   border: 2px solid #000000;
   border-radius: 4px;
   margin: 16px 0px;
+}
+@media (max-width: 360px) {
+  .content__results__item  {
+    height: 200px;
+  }
 }
 .content__results__item-img {
   max-width: 128px;
