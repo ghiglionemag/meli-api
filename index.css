@@ -46,6 +46,7 @@ body {
 }
 .content {
   margin: 0 auto;
+  padding: 12px;
   min-width: 359px;
   max-width: 510px;
 }
@@ -53,7 +54,6 @@ body {
   .content {
     min-width: 300px;
     max-width: 359px;
-    margin: 12px 12px;
   }
 }
 .content__p {
