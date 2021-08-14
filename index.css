@@ -52,6 +52,7 @@ body {
 }
 @media (max-width: 360px) {
   .content {
+    padding: 12px;
     min-width: 300px;
     max-width: 359px;
   }
