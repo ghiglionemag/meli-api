@@ -51,6 +51,7 @@ body {
 @media (max-width: 360px) {
   .content {
     max-width: 359px;
+    margin: 0 auto;
   }
 }
 .content__p {
