@@ -2,8 +2,6 @@ function search(results) {
   const contenedor = document.querySelector(".content__results");
   const templateEl = document.querySelector("#content__template");
 
-  console.log(results);
-
   for (const r of results) {
     const imgEl = templateEl.content.querySelector(
       ".content__results__item-img"
