@@ -151,12 +151,33 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
     min-width: 300px;
     height: 280px;
   }
 }
-
+@media (max-width: 479px) {
+  .content__results__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 451px) {
+  .content{
+    padding: 2%;
+  }
+  .content__results__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    height: 300px;
+  }
+}
 .content__results__item-img {
   padding-left: 5px;
   padding-top: 5px;
