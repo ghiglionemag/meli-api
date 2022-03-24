@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 body {
   margin: 0px;
@@ -79,7 +80,7 @@ h3 {
   background-color: white;
   height: 44px;
 }
-.header_form_img{
+.header_form_img {
   height: 15px;
   width: 40px;
 }
@@ -89,27 +90,12 @@ h3 {
   border: 1px solid #d0d0d0;
   box-shadow: 0px 0px 1px 1px #d0d0d0;
 }
-.content{
+.content {
   justify-content: center;
-  position: absolute;
-  background-color: aquamarine;
   width: 100%;
   padding: 0% 15%;
 }
-.content__results{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 15px;
-  background-color: blue;
-}
-@media (max-width: 1152px) {
-  .content__results {
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 .content__p {
   display: flex;
   justify-content: center;
@@ -130,33 +116,56 @@ h3 {
   font-size: 16px;
   overflow: auto;
 }
-.content__h2-title-counter {
-}
+
 .content__results {
   margin: 0px;
   padding: 0px;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
 }
+@media (max-width: 1152px) {
+  .content__results {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .content__results__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 55% 25%;
   padding: 10px;
   width: 100%;
   height: 150px;
-  border: 2px solid #000000;
-  border-radius: 4px;
   margin: 16px 0px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
 }
-@media (max-width: 360px) {
+@media (max-width: 600px) {
   .content__results__item {
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+    
+    min-width: 300px;
+    height: 280px ;
   }
 }
+
 .content__results__item-img {
+  padding-left: 5px;
+  padding-top: 5px;
   max-width: 128px;
   max-height: 119px;
 }
 .content__results__item-content {
   margin: 0px 10px;
+  padding: 15px;
 }
 .content__results__item-content-title {
   margin: 0px;
@@ -173,5 +182,6 @@ content__results__item-content-condition {
 
 .content__results__item-price {
   font-size: 28px;
+  padding-right: 10px;
   color: #5791a4;
 }
