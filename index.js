@@ -57,6 +57,7 @@ function main() {
     fetch("https://api.mercadolibre.com/sites/MLA/search?q=" + inputQuery)
       .then((response) => response.json())
       .then((data) => search(data.results));
+      console.log(data.resultss)
   });
 }
 main();
