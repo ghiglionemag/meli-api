@@ -27,6 +27,7 @@ function search(results) {
     const clone = document.importNode(templateEl.content, true);
     contenedor.appendChild(clone);
   }
+
 }
 function main() {
   const formEl = document.querySelector(".header__search-form");
@@ -54,10 +55,11 @@ function main() {
         </li>
       </template>
       `;
-    fetch("https://api.mercadolibre.com/sites/MLA/search?q=" + inputQuery)
+const limit = 4; 
+
+    fetch("https://api.mercadolibre.com/sites/MLA/search?q=" + inputQuery + "&limit=10")
       .then((response) => response.json())
       .then((data) => search(data.results));
-      console.log(data.resultss)
   });
 }
 main();
