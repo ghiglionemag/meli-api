@@ -166,7 +166,7 @@ h3 {
   }
 }
 @media (max-width: 451px) {
-  .content{
+  .content {
     padding: 2%;
   }
   .content__results__item {
@@ -177,6 +177,10 @@ h3 {
     min-width: 300px;
     height: 300px;
   }
+}
+
+.content__results__item:hover {
+  opacity: 0.5;
 }
 .content__results__item-img {
   padding-left: 5px;

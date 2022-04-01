@@ -40,10 +40,8 @@ function main() {
     <h2 class="content__h2-title-resultados">Resultados:</h2>
     <ul class="content__results"></ul>
       <template id="content__template">
-
         <li class="content__results__item">
           <img url="" alt=" " class="content__results__item-img"/>
-
           <div class="content__results__item-content">
           <a href="" class="content__results__item-content-title"><h3 class="content__results__item-content-title" >Título</h3></a>
             <p class="content__results__item-content-count">
